@@ -25,5 +25,9 @@ function deleteFromEmployeeByKey(object, key){
     return newObj;
 }
 
+function destructivelyDeleteFromEmployeeByKey(object, key){
+    delete object[key];
+    return object;
+}
 
-
+console.log(destructivelyDeleteFromEmployeeByKey(employee, "name"));
